@@ -1,0 +1,24 @@
+##Escape sequences
+
+
+ How you get two lines from one string?
+ How you get that little globe? 
+ 
+ The key is the \.
+
+A sequence in a string that starts with a \ is called an Escape Sequence 
+It allows us to include special characters in our strings. 
+NOTE:- \" is used to denote a double quote.
+
+In "hello\n\U1F30D" there are two escape sequences: 
+\n gives a newline
+\U followed by up to 8 hex digits sequence denotes a particular Unicode character.
+
+Unicode is a standard for representing characters that might not be on your keyboard. 
+Each available character has a Unicode code point: a number that uniquely identifies it. 
+These code points are generally written in hex notation, that is, using base 16 and the digits 0-9 and A-F. 
+You can find the code point for a particular character by looking up a code chart. 
+If you only need four digits for the codepoint, an alternative escape sequence is \u.
+
+When R comes across a \ it assumes you are starting an escape, 
+so if you actually need a backslash in your string you'll need the sequence \\.
