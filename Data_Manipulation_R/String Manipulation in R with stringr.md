@@ -1,4 +1,4 @@
-String Manipulation in R with stringr
+QUOTES
 
 How to enter strings in R
 How to control how numbers are transformed to strings
