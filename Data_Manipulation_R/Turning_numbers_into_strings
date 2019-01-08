@@ -21,4 +21,10 @@ formatC() also formats numbers individually, which means you always get the same
 The flag argument allows you to provide some modifiers that,
 or example, force the display of the sign (flag = "+"), 
 left align numbers (flag = "-") and pad numbers with leading zeros (flag = "0")
+
+format() looks at all the values in a vector before formatting, 
+it uses a consistent format and will, by default, align on the decimal point. 
+This is usually the behavior you want for a column of numbers in table.
  
+format() can also take character vectors as input. 
+In this case, you can use the justify argument, specific to character input, to justify the text to the left, right, or center.
