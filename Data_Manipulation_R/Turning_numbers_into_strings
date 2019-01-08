@@ -1,1 +1,24 @@
-Using format() with numbers
+Using format() with numbers:
+
+format() control the way the number is represented. 
+It also controls some of the properties of the resulting string that affect its display.
+
+ formatC() has a format argument that takes a code representing the required format. The most useful are:
+
+"f" for fixed,
+"e" for scientific, and
+"g" for fixed unless scientific saves space
+
+
+When using scientific format, the digits argument behaves like it does in format(); 
+it specifies the number of significant digits. 
+However, unlike format(), when using fixed format, 
+digits is the number of digits after the decimal point. 
+This is more predictable than format(), because the number of places after the decimal is fixed regardless of the values being formatted.
+
+formatC() also formats numbers individually, which means you always get the same output regardless of other numbers in the vector.
+
+The flag argument allows you to provide some modifiers that,
+or example, force the display of the sign (flag = "+"), 
+left align numbers (flag = "-") and pad numbers with leading zeros (flag = "0")
+ 
